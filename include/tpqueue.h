@@ -21,7 +21,7 @@ class TPQueue {
               } else {
                     for (int i = first; i < last; ++i) {
                         if (arr[i].prior < x.prior) {
-                            for (int j = last; j > i; --i) {
+                            for (int j = last; j > i; --j) {
                                 arr[j % size] = arr[(j % size) - 1];
                             }
                             last++;
